@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input_Activity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/row_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"></TextView>
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:onClick="date"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"></TextView>
+
+                <Spinner
+                    android:id="@+id/location"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/location_list"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Recyclable"></TextView>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Count/Number"></TextView>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight (lbs)"></TextView>
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Volume (gallons)"></TextView>
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Volume\n(cubic yards)"></TextView>
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="Contamination?"></TextView>
+
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Paper and Cardboard"></TextView>
+
+                <EditText
+                    android:id="@+id/paper_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/paper_lbs"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/paper_gallons"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/paper_yards"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/paper"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_can"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cans"></TextView>
+
+                <EditText
+                    android:id="@+id/cans_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/cans_lbs"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/cans_gallons"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/cans_yards"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/cans"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_glass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Glass bottles"></TextView>
+
+                <EditText
+                    android:id="@+id/glass_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/glass_lbs"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/glass_gallons"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/glass_yards"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/glass_bottle"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_plastic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Plastic bottles"></TextView>
+
+                <EditText
+                    android:id="@+id/plastic_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/plastic_lbs"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/plastic_gallons"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/plastic_yards"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/plastic_bottle"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Others"></TextView>
+
+                <EditText
+                    android:id="@+id/other_count"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/other_lbs"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/other_gallons"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/other_yards"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/other_bottle"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:id="@+id/Enter_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>

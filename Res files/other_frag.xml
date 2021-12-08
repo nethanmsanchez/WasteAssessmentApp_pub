@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/frag_container6"
+    android:layout_width="361dp"
+    android:layout_height="487dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="100dp"
+    app:layout_constraintBottom_toTopOf="@+id/textView3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.wasteassessment2.Frag_input_Activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_border">
+
+
+    <Button
+        android:id="@+id/hazardous"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Hazardous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherfragtext" />
+
+    <Button
+        android:id="@+id/batteries"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Batteries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hazardous" />
+
+    <Button
+        android:id="@+id/ewaste"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="E-waste"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batteries" />
+
+    <Button
+        android:id="@+id/wood"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Wood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ewaste" />
+
+    <TextView
+        android:id="@+id/otherfragtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="151dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Please select material to input data." />
+
+    <Button
+        android:id="@+id/otherbackbutton"
+        android:background="@drawable/smaller_rounded_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="206dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wood" />
+</android.support.constraint.ConstraintLayout>

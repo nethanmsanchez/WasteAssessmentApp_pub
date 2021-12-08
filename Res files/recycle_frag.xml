@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/frag_container3"
+    android:layout_width="361dp"
+    android:layout_height="487dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="100dp"
+    app:layout_constraintBottom_toTopOf="@+id/textView3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.wasteassessment2.Frag_input_Activity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_border">
+
+
+    <Button
+        android:id="@+id/cleanPAC"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Clean Paper and Cardboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclefragtext" />
+
+    <Button
+        android:id="@+id/cans"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Cans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleanPAC" />
+
+    <Button
+        android:id="@+id/pbj"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Plastic bottles and jugs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glass_bottles" />
+
+    <Button
+        android:id="@+id/glass_bottles"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Glass bottles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cans" />
+
+    <Button
+        android:id="@+id/other2"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/smaller_rounded_border"
+        android:text="Other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbj" />
+
+    <TextView
+        android:id="@+id/recyclefragtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="151dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Please select material to input data." />
+
+    <Button
+        android:id="@+id/recyclebackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="206dp"
+        android:text="Back"
+        android:background="@drawable/smaller_rounded_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other2" />
+</android.support.constraint.ConstraintLayout>
